@@ -20,7 +20,7 @@ https://drive.google.com/file/d/1q5VVCCreOuXsujRzZkBAv12WJ1KZvQ0I/view
 * `curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -`
 * `sudo apt install nodejs`
 * `sudo npm install -g typescript`
-* `git clone https://github.com/ParveenBhadooOfficial/Telegram-BhadooCloud`    Change this url to your fork url.
+* `sudo git clone https://github.com/hypercian/Telegram-BhadooCloud`    Change this url to your fork url.
 * `cd Telegram-BhadooCloud`
 * `sudo npm install`
 * `sudo tsc`
@@ -29,7 +29,7 @@ https://drive.google.com/file/d/1q5VVCCreOuXsujRzZkBAv12WJ1KZvQ0I/view
 * `sudo reboot` is required
 * `sudo bash ./aria.sh` It Should Print `Aria2c daemon started`
 * `sudo npm start`
-* Your Bot is Started. Send `/mirror https://github.com/ParveenBhadooOfficial/Telegram-BhadooCloud/blob/master/README.md` to your Telegram Bot.
+* Your Bot is Started. Send `/mirror https://github.com/hypercian/Telegram-BhadooCloud/blob/master/README.md` to your Telegram Bot.
 * In Terminal Copy the accounts.google.com full url and paste in browser and authenticate your drive.
 * Paste the Token you received in terminal.
 * Download the credentials.json file from your Linux Server. (I use Termius to Transfer files, it's in root of Telegram-BhadooCloud directory)
@@ -52,8 +52,10 @@ Note: You must change git url in [Docker File](https://github.com/ParveenBhadooO
 * Login to Heroku CLI
 * `cd /d d:`    to change directory in windows here d: is D Directory changing from C.
 * `heroku login`
+* `git init`
 * `heroku git:remote -a xxxx`
 * `heroku stack:set container`
+* `git add .`
 * `git add -f credentials.json src/.constants.js aria.sh client_secret.json`
 * `git commit -m 'try commit'`
 * `git commit -am "make it better"`    commit any changes
